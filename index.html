@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sign-up Form</title>
+</head>
+<body>
+    <div class="partition">
+        <div class="animate">
+            <h1>Getting started !</h1>
+            <p>This is not a real online service! You know you need something like this
+                in yout life to help you realize your deepest dreams.
+            </p>
+            <p>Sign up now to get started !</p>
+            <br>
+            <p><em>You know you want to.</em></p>
+            <br>
+        </div>
+        <h2>Sign up</h2>
+        <form method="post">
+            <div class="form-container">
+                <div class="column1">
+                    <label for="first_name">FIRST NAME</label>
+                    <input type="text" id="first_name" required>
+                    <br>
+                    <label for="mail">E-MAIL</label>
+                    <input type="email" id="mail" required>
+                    <br>
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password" required>
+                </div>
+                <div class="column2">
+                    <label for="last_name">LAST NAME</label>
+                    <input type="text" id="last_name">
+                    <br>
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="number" id="phone" minlength="10" maxlength="10">
+                    <br>
+                    <label for="confirm-password">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirm-password" required>
+                </div>
+            </div>
+            <button type="submit">Create Account</button>
+            <p class="sign-in">Already have an account? <a href="http://127.0.0.1:5500/">Log in</a></p>
+        </form>
+    </div>
+</body>
+</html>

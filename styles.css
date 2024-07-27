@@ -1,0 +1,74 @@
+html, body {
+    height: 100%;
+    margin: 0; 
+    font-family: 'American Typewriter', 'Georgia', 'Times New Roman', serif; 
+}
+body{
+    background-image: url('imag3.jpg');
+    background-size:cover;
+    background-repeat: no-repeat; 
+    display: flex;
+    justify-content: center;
+}
+.partition{
+    background: white;
+    padding: 50px;
+    width: 90vh;
+    height: 100%;
+    border-radius: 20px;
+}
+.animate {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 3s forwards;
+    animation-delay: 1s;
+}
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+h1{
+    text-align: center;
+    margin-top: 0;
+    font-size: 50px;
+}
+p{
+    font-size: 25px;
+    font-weight: 500;
+}
+.form-container{
+    display: flex;
+    justify-content: space-between;
+}
+.column1, .column2 {
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    border: 2px solid black;
+    padding: 8px;
+    font-size: 16px;
+    width: 15vw;
+    margin-bottom: 15px;
+}
+input:invalid{
+    border-color: red;
+}
+input:valid{
+    border-color: green;
+}
+.sign-in{
+    font-size: large;
+}
+button{
+    margin-top: 35px;
+    color: white;
+    background-color: darksalmon;
+    padding: 8px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+}
